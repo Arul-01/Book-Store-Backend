@@ -47,4 +47,4 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 // 💥 FIX: Correct Vercel export
-module.exports = serverless(app);
+module.exports.handler = serverless(app);
