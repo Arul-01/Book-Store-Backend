@@ -15,15 +15,11 @@ connectDB();
 
 app.use(express.json());
 
-const allowedOrigins = [
-  "http://localhost:3000",
-  "https://myfrontend.vercel.app",
-];
 
 app.use(cors({
   origin: [
     "http://localhost:3000",
-    "https://myfrontend.vercel.app"
+    "https://book-store-frontend-91k3.vercel.app/"
   ],
   credentials: true,
 }));
